@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>	
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			ul,li{
+				list-style-type: none;
+			}
+			a{
+				text-decoration: none;
+				color:black;
+			}
+			#diyige{
+				width: 1280px;
+				height: 50px;
+			}
+			#diyige .uu{
+				margin-left:100px ;
+			}
+			#diyige li{
+				float: left;
+			}
+			#diyige .tu{
+				padding-right:20px ;
+			}
+			#diyige .denglu{
+				font-size:23px ;
+				padding-left:20px ;
+				margin-top:10px ;
+				border-left:solid 2px #CCCCCC ;
+			}
+			
+			#signin{
+				width: 1280px;
+				height: 700px;
+				position: relative;
+			}
+			#sign{
+				width: 550px;
+				height: 550px;
+				background:#e1f2fc;
+				position: absolute;
+				left:700px;
+				top:50px;
+			}
+			#signin img{
+				width:1280px;
+				height: 700px;
+			}
+			#sign li{
+				float: left;
+				width:273px ;
+				height: 50px;
+				line-height: 50px;
+				font-size:25px ;
+				text-align: center;
+				/*border-bottom: solid 1px blue;*/
+			}
+			#sign .li1{
+				border-bottom: solid 1px #45a2dd;
+				border-right: solid 1px #45a2dd;
+				background: #89caf4;
+			}
+			
+			.li1 #inp input{
+				width: 400px;
+				height: 50px;
+				
+			}
+			.li1 #inp .inp1{
+				margin: 70px 70px 20px 70px;
+				background-image:url(img/zhanghao.jpg);
+				background-repeat:no-repeat;
+				background-position: 10px center;
+				padding-left:40px ;
+			}
+			.li1 #inp .inp2{
+				margin: 0px 70px 20px 70px;
+				background-image:url(img/miam.jpg);
+				background-repeat:no-repeat;
+				background-position: 10px center;
+				padding-left:40px ;
+			}
+			.li1 #inp .inp3{
+				width: 440px;
+				margin: 0px 70px 20px 70px;
+			}
+			.li1 #inp .kuang{
+				width: 200px;
+				height: 80px;
+				background: white;
+				margin-left:313px ;
+			}
+			.li1 #inp .deng{
+				margin-left:90px ;
+				margin-top:20px ;
+				background: #79b1d4;
+			}
+			.li1 #inp span{
+		
+				display: inline-block;
+				font-size:14px ;
+			
+			}
+			.li1 #inp a{
+				display: block;
+				height: 20px;
+				border-right:solid 1px #ccc ;
+				
+			}
+		</style>
+	</head> 
+	<body>
+		<div id="diyige">
+			<ul class="uu">
+				<li class="tu"><a href="#"><img src="img/logo.png"</a></li>
+				<li class="denglu">登录</li>
+			</ul>
+		</div>
+		<div id="signin">
+			<a href="#"><img src="img/bid.jpg"/></a>
+			<div id="sign">
+				<ul>
+					<li class="li1">普通登录
+						<div id="inp">
+							<input class="inp1" type="text" placeholder="邮件"/>
+							<input class="inp2" type="password" placeholder="密码"/>
+							<input class="inp3" type="text" placeholder="请输入验证码"/>
+							<div class="kuang"></div>
+							<input class="deng" type="button" value="登录"/>
+						<div>
+							<span><a href="#">忘记密码?</a></span>
+							<span><a href="#">注册</a></span>
+							<span><a href="#">关于网易邮箱账号</a></span>
+						</div>
+						</div>
+					</li>
+					<li class="li2">二维码登录</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>

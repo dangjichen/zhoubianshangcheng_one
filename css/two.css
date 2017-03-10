@@ -1,0 +1,58 @@
+#middle2 #dl2 {
+  display: block;
+  float: left;
+  margin: 10px;
+  width: 210px;
+  height: 538px;
+  background: #CFCFCF; }
+
+#middle2 #middletop a {
+  height: 50px;
+  width: 500px;
+  line-height: 80px;
+  text-align: left;
+  margin-left: 10px; }
+
+#middle2 #middletop #a2 {
+  text-align: right;
+  margin-right: 10px; }
+
+#middle2 #dl2 dt {
+  display: block;
+  width: 210px;
+  height: 100px;
+  line-height: 150px;
+  border-bottom: solid 1px white;
+  font-size: 25px;
+  padding-bottom: 50px; }
+
+#middle2 #dl2 dd {
+  padding-top: 10px; }
+
+#middle2 #dl2 a:hover {
+  color: orangered; }
+
+#middlefoot {
+  margin-top: 10px;
+  float: left;
+  width: 960px;
+  height: 538px; }
+
+#middle2 #middlefoot .middlefootleft {
+  float: left; }
+
+#middle2 #middlefoot .middlefootright {
+  margin-left: 321px;
+  float: left; }
+
+#middle2 #middlefoot .middlefootcenter {
+  position: absolute;
+  left: 620px;
+  top: 1318px; }
+
+#middle2 #middlefoot .middlefoottop {
+  position: absolute;
+  left: 922px;
+  top: 1318px; }
+
+/*# sourceMappingURL=two.css.map */

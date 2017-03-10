@@ -1,0 +1,334 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+#Html {
+  width: 1280px; }
+
+/*置顶导航*/
+#top1 {
+  width: 1278px;
+  height: 30px;
+  line-height: 30px; }
+
+#top1 a:hover {
+  color: orangered; }
+
+#top2 a:hover {
+  color: orangered; }
+
+#left {
+  width: 150px;
+  float: left;
+  padding-left: 50px;
+  position: relative; }
+
+#leftUl {
+  width: 150px;
+  height: 180px;
+  border: solid 1px #ccc;
+  border-top: none;
+  display: none;
+  position: absolute;
+  z-index: 999;
+  background-color: #fff; }
+
+#left li {
+  width: 150px; }
+
+#Sp {
+  display: inline-block;
+  float: left;
+  margin-left: 20px; }
+
+#right {
+  float: right;
+  padding-right: 50px; }
+
+#right li {
+  width: 120px;
+  float: left; }
+
+#rightUl {
+  width: 120px;
+  height: 150px;
+  display: none;
+  border: 1px solid #ccc;
+  float: left;
+  background-color: #fff;
+  border-top: none; }
+
+#rightUl2 {
+  width: 120px;
+  height: 100px;
+  display: none;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-top: none; }
+
+#rightUl li {
+  width: 120px; }
+
+#left:hover #leftUl {
+  display: block; }
+
+#rightone:hover #rightUl {
+  position: absolute;
+  z-index: 999;
+  display: block; }
+
+#righttwo:hover #rightUl2 {
+  position: absolute;
+  z-index: 999;
+  display: block; }
+
+/*搜索框板块*/
+#top2 {
+  width: 1278px;
+  height: 100px;
+  border-top: solid 1px #ccc;
+  position: relative; }
+
+#put {
+  position: absolute;
+  width: 150px;
+  height: 20px;
+  left: 50px;
+  top: 40px; }
+
+#putt {
+  position: absolute;
+  width: 28px;
+  height: 24px;
+  left: 204px;
+  top: 40px;
+  background-image: url(../img/cha.jpg);
+  background-repeat: no-repeat;
+  background-size: 25px 20px; }
+
+#logo {
+  width: 396px;
+  height: 100px; }
+
+#top2right {
+  display: inline-block;
+  float: right;
+  height: 40px;
+  line-height: 40px;
+  width: 150px;
+  border: solid 1px #ccc;
+  position: absolute;
+  left: 1000px;
+  top: 40px; }
+
+/*导航配置*/
+#top3 {
+  width: 1278px;
+  height: 30px;
+  background: orangered; }
+
+#nav {
+  padding-left: 80px; }
+
+#nav li {
+  display: inline-block;
+  float: left;
+  width: 130px; }
+
+#nav a {
+  display: inline-block;
+  width: 130px;
+  height: 30px;
+  line-height: 30px;
+  cursor: pointer;
+  color: #fff; }
+
+#nav a:hover {
+  background: orange; }
+
+/*导航全部商品子菜单*/
+#nav_li {
+  position: relative; }
+
+#navdiv {
+  width: 0px;
+  height: 0px;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: left;
+  z-index: 999;
+  position: absolute;
+  background: white;
+  overflow: hidden;
+  transition: all 1s; }
+
+#navdiv a {
+  cursor: pointer;
+  color: #000000; }
+
+#navdiv b {
+  color: orangered; }
+
+#navdiv ul {
+  float: left;
+  width: 160px;
+  height: 200px;
+  border-bottom: solid 2px #ccc;
+  border-top: solid 2px #ccc;
+  padding-top: 30px; }
+
+#navdiv ul li {
+  height: 30px;
+  text-align: left; }
+
+#navdiv span a {
+  display: inline-block;
+  width: 200px;
+  height: 40px;
+  text-align: left; }
+
+#nav_li:hover #navdiv {
+  height: 340px;
+  width: 1000px;
+  transition: all 1s;
+  border: solid 1px orangered;
+  border-top: none; }
+
+#navdiv a:hover {
+  color: orangered;
+  background: #fff; }
+
+#banner {
+  width: 1278px;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer; }
+
+#bottom, #bottom1 {
+  width: 1181px;
+  float: left;
+  margin-left: 10px; }
+
+#bottom li {
+  margin: 10px;
+  width: 294px;
+  height: 150px;
+  float: left;
+  margin: 50px 0px;
+  border-right: 1px solid #CFCFCF; }
+
+#bottom p {
+  float: left;
+  width: 45px;
+  height: 45px;
+  margin-top: 60px;
+  margin-left: 85px;
+  font-size: 30px;
+  border: solid 2px orangered;
+  border-radius: 50%;
+  color: orangered; }
+
+#bottom h3 {
+  display: block;
+  width: 150px;
+  height: 80px;
+  float: right;
+  text-align: left;
+  line-height: 150px;
+  color: orangered; }
+
+#bottom span {
+  display: block;
+  float: right;
+  width: 150px;
+  text-align: left;
+  padding-top: 10px;
+  font-size: 12px; }
+
+#bottom .rigth {
+  border: none; }
+
+#bottom1 {
+  height: 220px;
+  border: solid 1px #ccc; }
+
+#bottom1 dl {
+  margin: 30px 0;
+  float: left;
+  width: 232px;
+  height: 160px;
+  border-right: solid 1px #ccc; }
+
+#bottom1 dd {
+  padding-top: 20px;
+  font-size: 12px; }
+
+#bottom1 .rigth {
+  border: none; }
+
+#bottom1 a:hover {
+  color: orangered; }
+
+#foot {
+  float: left;
+  margin: 10px;
+  width: 1181px;
+  height: 150px; }
+
+#foot img {
+  float: left; }
+
+#foot .footleft, #foot .footcenter, #foot .footright {
+  margin-top: 50px;
+  margin-left: 150px;
+  float: left;
+  display: inline-block;
+  width: 130px;
+  height: 40px;
+  line-height: 40px;
+  border-right: solid 2px red; }
+
+#foot .footleft {
+  margin-top: 60px; }
+
+#foot .footcenter {
+  margin-left: 20px;
+  border: none; }
+
+#foot .footright {
+  width: 50px;
+  height: 50px;
+  margin-top: 55px;
+  margin-left: 1px;
+  border: none; }
+
+#foot .footfoot {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 14px;
+  padding: 0px 5px; }
+
+#foot .foott {
+  text-align: left;
+  width: 560px;
+  height: 50px;
+  position: absolute;
+  left: 500px;
+  margin-top: 50px; }
+
+#foot .footfoot:hover {
+  color: orangered; }
+
+#foot p {
+  text-align: left;
+  font-size: 14px; }
+
+/*# sourceMappingURL=one.css.map */
