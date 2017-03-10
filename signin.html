@@ -66,7 +66,9 @@
 				border-right: solid 1px #45a2dd;
 				background: #89caf4;
 			}
-			
+			#inp{
+				width: 550px;
+			}
 			.li1 #inp input{
 				width: 400px;
 				height: 50px;
@@ -74,7 +76,7 @@
 			}
 			.li1 #inp .inp1{
 				margin: 70px 70px 20px 70px;
-				background-image:url(img/zhanghao.jpg);
+				background-image:url(img/zhang.jpg);
 				background-repeat:no-repeat;
 				background-position: 10px center;
 				padding-left:40px ;
@@ -97,21 +99,104 @@
 				margin-left:313px ;
 			}
 			.li1 #inp .deng{
-				margin-left:90px ;
+				font-size:20px ;
+				margin-left:30px ;
 				margin-top:20px ;
 				background: #79b1d4;
 			}
-			.li1 #inp span{
-		
-				display: inline-block;
-				font-size:14px ;
-			
+			.li1 #span{
+				width: 550px;
+				text-align: center;
+				font-size: 14px;
 			}
-			.li1 #inp a{
+			.li1 #span a{
+				display: inline-block;
+				width: 120px;
+				color: blue;
+			}
+			.li1 #span span{
+					border-right:solid 1px #ccc ;
+			}
+			.li1 #span a:hover{
+				color: orangered;
+			}
+			.li2 #erwei{
+				position:absolute;
+				width: 550px;
+				height: 500px;
+				background:#89caf4;
+				top:51px;
+				left: 0;
+			}
+			.li2 #erwei p{
+				font-size:20px ;
 				display: block;
-				height: 20px;
-				border-right:solid 1px #ccc ;
-				
+				height: 80px;
+				line-height: 80px;
+			}
+			.li2 #erwei a{
+				color:blue ;
+			}
+			.li2 #erwei img{
+				width: 400px;
+				height: 350px;
+			}
+			.li2 #erwei{
+				width: 550px;
+				text-align: center;
+				font-size: 14px;
+			}
+			.li2 #erwei span a{
+				display: inline-block;
+				width: 120px;
+			}
+			.li2 #erwei span{
+					border-right:solid 1px #ccc ;
+			}
+			.li2 #erwei a:hover{
+				color: orangered;
+			}
+			
+			
+			#hidden{
+				position: none;
+				width: 1280px;
+				height: 150px;
+				text-align: center;
+			}
+			#hidden dt{
+				float: left;
+				width: ;
+			}
+			#hidden ul{
+				width:1220px ;
+				height: 100px;
+				margin-top:50px ;
+				margin-left:50px ;
+			}
+			#hidden li{
+				float: left;
+				font-size: 20px;
+				margin-top:10px ;
+				width: 232px;
+			}
+			#hidden li p{
+				font-size: 14px;
+			}
+			#hidden li:hover{
+				color: orangered;
+			}
+			#hidden li:hover p{
+				color: black;
+			}
+			
+			#foot{
+				width: 1280px;
+				height: 50px;
+				text-align: center;
+			}
+			#foot a:hover{
+				color: orangered;
 			}
 		</style>
 	</head> 
@@ -133,16 +218,73 @@
 							<input class="inp3" type="text" placeholder="请输入验证码"/>
 							<div class="kuang"></div>
 							<input class="deng" type="button" value="登录"/>
-						<div>
-							<span><a href="#">忘记密码?</a></span>
+						<div id="span">
+							<span><a href="#">忘记密码？</a></span>
 							<span><a href="#">注册</a></span>
 							<span><a href="#">关于网易邮箱账号</a></span>
 						</div>
 						</div>
 					</li>
-					<li class="li2">二维码登录</li>
+					<li class="li2">二维码登录
+						<!--<div id="erwei">
+							<p>使用<a href="#">网易账号管家</a>或<a href="#">邮箱大师</a>扫一扫快速登录</p>
+							<img src="img/ma.jpg.jpg" />
+							<div id="span">
+							<span><a href="#">忘记密码？</a></span>
+							<span><a href="#">注册</a></span>
+							<span><a href="#">关于网易邮箱账号</a></span>
+						</div>
+						</div>-->
+					</li>
 				</ul>
 			</div>
 		</div>
+		<div id="hidden">
+			<ul>
+				<a href="#"><li>
+					<dl>
+						<dt><img src="img/dun.jpg" /></dt>
+						<dd>网易账号管家<p>安全、免费、实用</p></dd>
+					</dl>
+				</li>
+				</a>
+				<a href="#"><li>
+					<dl>
+						<dt><img src="img/dun.jpg" /></dt>
+						<dd>找回密码<p>多种方式快速找回密码</p></dd>
+					</dl>
+				</li>
+				</a>
+				<a href="#"><li>
+					<dl>
+						<dt><img src="img/dun.jpg" /></dt>
+						<dd>锁定账号<p>禁止登陆,防止账号被盗</p></dd>
+					</dl>
+				</li>
+				</a>
+				<a href="#"><li class="list_4">
+					<dl>
+						<dt><img src="img/dun.jpg" /></dt>
+						<dd>账号中心公众版<p>账号神器，安全达人必备</p></dd>
+					</dl>
+				</li>
+				</a>
+				<a href="#"><li>
+					<dl>
+						<dt><img src="img/dun.jpg" /></dt>
+						<dd>账号修复<p>通过客服解决账号问题</p></dd>
+					</dl>
+				</li>
+				</a>
+			</ul>			
+		</div>
+		<div id="foot">
+			<a href="#"><span>AboutNetEase</span></a>-<a href="#"><span>公司简介</span></a>-<a href="#"><span>联系方式</span></a>-<a href="#"><span>OAuth2.0认证</span></a>-
+			<a href="#"><span>招聘信息</span></a>-<a href="#"><span>客户服务</span></a>-<a href="#"><span>相关法律</span></a>-<a href="#"><span>网络营销</span></a>
+			<p>网易公司版权所有©1997-2017</p>
+		</div>
 	</body>
 </html>
+<script>
+	
+</script>
