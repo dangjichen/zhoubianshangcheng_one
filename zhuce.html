@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>	
+		<style>
+			*{
+				padding: 0;
+				margin: 0;
+				text-decoration: none;
+			}
+			a{
+				color: black;
+			}
+			ul,li{
+				list-style: none;
+			}
+			#background{
+				width: 1280px;
+				height: 900px;
+				background: #ccc;
+			}
+			
+			#top{
+				width: 1280px;
+				height: 100px;
+				/*background: #ccc;*/
+			}
+			#top li{
+				float: left;
+				width: 200px;
+				height: 100px;
+				line-height: 100px;
+			}
+			#top .left{
+				margin-top:20px;
+				margin-left:100px ;
+			}
+			#top .rigth{
+				float: right;
+				font-size:20px ;
+				margin-right:60px ;
+			}
+			#top a{
+				color: red;
+			}
+			#top a:hover{
+				color: orangered;
+			}
+			
+			#center{
+				width: 1080px;
+				height: 700px;
+				background: white;
+				margin-left:100px ;
+			}
+			#center h2{
+				display: block;
+				color: red;
+				height: 50px;
+				width: 900px;
+	/*			background: #ccc;*/
+				padding-top:60px ;
+				margin-left:100px ;
+			}
+			#center input{
+				width: 500px;
+				height: 50px;
+				margin-top:30px ;
+			}
+			#center .yan{
+				width: 200px;
+				height: 80px;
+				border: solid 1px #ccc;
+				margin-left:398px ;
+				margin-top:20px ;
+			}
+			#center .tet{
+				margin-left:250px ;
+				width: 600px;
+				height: 550px;
+				text-align: right;
+			}
+			#center .zhu{
+				font-size: 20px;
+			}
+			#center .bottom{
+				font-size:13px ;
+				padding-top:20px ;
+			}
+			#center a:hover{
+				color: orangered;
+			}
+			#foot{
+				width: 1280px;
+				height: 50px;
+				text-align: center;
+				margin-top:50px ;
+			}
+			#foot a:hover{
+				color: orangered;
+			}
+		</style>
+	</head> 
+	<body>
+		<div id="background">
+			<div id="top">
+				<ul>
+					<li class="left"><a href="#"><img src="img/logo.png" /></a></li>
+					<li class="rigth">已有账号？去<a href="signin.html">登录</a></li>
+				</ul>
+			</div>
+			<div id="center">
+				<h2>注册账号</h2>
+					<div class="tet">
+						<p>账号：<input type="text" /></p>
+						<p>密码：<input type="password" /></p>
+						<p>确认密码：<input type="password" /></p>
+						<p>验证码：<input type="text" /></p>
+						<div class="yan"></div>
+						<input class="zhu" type="button" value="注册" />
+						<p class="bottom">用户注册即代表同意<a href="#">《服务条款》</a>和<a href="#">《网络游戏用户隐私保护和个人信息利用政策》</a></p>
+					</div>
+			</div>
+			<div id="foot">
+				<a href="#"><span>AboutNetEase</span></a>-<a href="#"><span>公司简介</span></a>-<a href="#"><span>联系方式</span></a>-<a href="#"><span>OAuth2.0认证</span></a>-
+				<a href="#"><span>招聘信息</span></a>-<a href="#"><span>客户服务</span></a>-<a href="#"><span>相关法律</span></a>-<a href="#"><span>网络营销</span></a>
+				<p>网易公司版权所有©1997-2017</p>
+			</div>
+		</div>
+	</body>
+</html>
