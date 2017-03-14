@@ -66,20 +66,31 @@
 			#center input{
 				width: 500px;
 				height: 50px;
-				margin-top:30px ;
+				margin-top:10px ;
+				font-size: 20px;
 			}
 			#center .yan{
-				width: 200px;
-				height: 80px;
+				width: 100px;
+				height: 50px;
 				border: solid 1px #ccc;
 				margin-left:398px ;
 				margin-top:20px ;
+				text-align: center;
+			}
+			#center .yanma{
+				width: 100px;
+				height:20px;
+				border: solid 1px #ccc;
+				margin-left:288px ;
+				margin-top:10px ;
+				text-align: center;
 			}
 			#center .tet{
 				margin-left:250px ;
 				width: 600px;
 				height: 550px;
-				text-align: right;
+				text-align:right;
+				position: relative;
 			}
 			#center .zhu{
 				font-size: 20px;
@@ -100,6 +111,24 @@
 			#foot a:hover{
 				color: orangered;
 			}
+			.tet span{
+				font-size: 16px;
+				display: block;
+				width: 200px;
+				position: absolute;
+				left:600px;
+				top:25px;
+				text-align: left;
+			}
+			.tet .msg1{
+				left:600px;
+				top:90px;
+			}
+			.tet .msg2{
+				left:600px;
+				top:155px;
+			}
+			
 		</style>
 	</head> 
 	<body>
@@ -113,11 +142,11 @@
 			<div id="center">
 				<h2>注册账号</h2>
 					<div class="tet">
-						<p>账号：<input type="text" /></p>
-						<p>密码：<input type="password" /></p>
-						<p>确认密码：<input type="password" /></p>
-						<p>验证码：<input type="text" /></p>
-						<div class="yan"></div>
+						<p>账号：<input id="userName" type="text" placeholder="网易邮箱/手机号/其他邮箱"/><span></span></p>
+						<p>密码：<input class="pwd" type="password" placeholder="6-16位密码，区分大小写"/><span class="msg1"></span></p>
+						<p>确认密码：<input class="cpwd" type="password" placeholder="再次输入密码" /><span class="msg2"></span></p>
+						<p>验证码：<input class="yanzheng" type="text" placeholder="点击图片更换验证码" /></p>
+						<!--<a href="###">--><div class="yan"></div><!--</a>--><div class="yanma"></div>
 						<input class="zhu" type="button" value="注册" />
 						<p class="bottom">用户注册即代表同意<a href="#">《服务条款》</a>和<a href="#">《网络游戏用户隐私保护和个人信息利用政策》</a></p>
 					</div>
@@ -130,3 +159,61 @@
 		</div>
 	</body>
 </html>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+			var userName = document.getElementById("userName");
+			userName.onblur = function(){
+				var reg = /^[0-9a-zA-Z][0-9a-zA-Z_]{5,11}$/;
+				var oText = userName.value;
+				console.log(reg.test(oText));
+				var span = document.getElementsByTagName("span")[0];
+					if(reg.test(oText)){
+						span.innerHTML="用户名符合";
+						span.style.color="green";
+					}else{
+						span.innerHTML="用户名不符合";
+						span.style.color="red";
+					}
+			};
+	var pwd = document.getElementsByClassName("pwd")[0];
+	var cpwd = document.getElementsByClassName("cpwd")[0];
+	var msg1 = document.getElementsByClassName("msg1")[0];
+	var msg2 = document.getElementsByClassName("msg2")[0];
+	pwd.onblur = function(){
+		var reg = /^[0-9a-zA-Z][0-9a-zA-Z_]{6,12}$/;
+		var _pwd = pwd.value;
+			if(reg.test(_pwd)){
+				msg1.innerHTML = "密码可用";
+				msg1.style.color="green";}
+			else{
+				msg1.innerHTML = "密码格式不正确";
+				msg1.style.color="red";}
+		}
+	cpwd.onblur = function(){
+		var _cpwd = cpwd.value;
+			if(_cpwd!=""){
+			if(pwd.value==_cpwd){
+				msg2.innerHTML = "密码正确";
+				msg2.style.color="green";
+			}else{
+				msg2.innerHTML = "两次密码不一致";
+				msg2.style.color="red";
+			}
+		}
+	};
+		var yan = document.getElementsByClassName("yan")[0];
+		   yan.innerHTML=parseInt(Math.random()*10)+""+parseInt(Math.random()*10)+""+parseInt(Math.random()*10)+""+parseInt(Math.random()*10);
+		yan.onclick=function(){
+			 yan.innerHTML=parseInt(Math.random()*10)+""+parseInt(Math.random()*10)+""+parseInt(Math.random()*10)+""+parseInt(Math.random()*10);
+		}
+		var yanzheng = document.getElementsByClassName("yanzheng");
+		var yanma =document.getElementsByClassName("yanma");
+		yanzheng.onblur=function(){
+			if(yanzheng.innerHTML==yan.innerHTML){
+				yanma.innerHTML ="验证通过";
+			}
+		}
+		
+</script>
+
+
